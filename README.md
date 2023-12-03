@@ -58,10 +58,19 @@ Fast check for validity of $\models \psi$: In the CNF($\phi_1, ..., \phi_n \mode
 
 To convert a propositional logic formula to CNF:
 1. Remove all implications using $p\implies q \vdash \neg p \vee q$
-2. Convert to Negation normal form using De-Morgan's Laws
+2. Convert to Negation normal form(NNF) using De-Morgan's Laws
 3. Do case analysis:
    1. If $\phi$ is literal/atom, return $\phi$
    2. If $\phi$ is a conjunction, get the CNF of it too
    3. Apply distributivity law on CNFs
 
 
+#### Horn Clauses
+Grammar for Horn Clauses:  
+$P ::= \perp  \mid \top \mid P$  
+$A ::= P \mid P \wedge A$  
+$C ::= A \rightarrow P$  
+$H ::= C \mid C \wedge H$  
+> Horn formulas are conjunctions of Horn clauses. $A$ Horn clause is an implication whose assumption $A$ is a conjunction of propositions of type $P$ and whose conclusion is also of type $P$.
+
+Eg: $(p_2 \wedge p_3 \wedge p_5 \implies p_{13}) \wedge (\top \implies p_5)\wedge(p_5 \wedge p_{11} \implies \perp)$
