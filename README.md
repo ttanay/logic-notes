@@ -17,8 +17,9 @@ Rules for natural deduction:
    3. For introducting an implication, make an assumption, arrive at a result, then create an implication from the assumption to the result. TODO: Add symbolic expression of the same
 4. If $(\phi\vdash\psi) \wedge (\psi\vdash\phi)$ then $\phi \dashv \vdash \psi$
 5. $\vee$ (Disjunction) 
-   1. $\frac{\phi}{\phi\vee\psi}_{\vee i}$ $\frac{\psi}{\phi\vee\psi}_{\vee i}$
-   2. For eliminating a disjunction, arrive at another term $\chi$ from all terms in the disjunction and then conclude $\chi$. TODO: Add symbolic expression for the same. 
+   1. $\frac{\phi}{\phi\vee\psi}_{\vee i}$  
+   2. $\frac{\psi}{\phi\vee\psi}_{\vee i}$  
+   3. For eliminating a disjunction, arrive at another term $\chi$ from all terms in the disjunction and then conclude $\chi$. TODO: Add symbolic expression for the same. 
 6. $\neg$ (Negation)
    1. $\frac{\phi\quad\neg\phi}{\perp}_{\neg e}$
    2. For introducing a negation $\neg\phi$, arrive at a contradiction from $\phi$
