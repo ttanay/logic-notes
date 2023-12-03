@@ -7,7 +7,8 @@ Here, $\phi_i$ is the premise and $\psi$ is the conlusion.
 Rules for natural deduction:
 1. $\wedge$ (AND)
    1. $\frac{\phi\quad\psi}{\phi \wedge \psi}_{\wedge i}$
-   2. $\frac{\phi \wedge \psi}{\phi}_{\wedge e_1}$, $\frac{\phi \wedge \psi}{\psi}_{\wedge e_2}$ 
+   2. $\frac{\phi \wedge \psi}{\phi}_{\wedge e_1}$
+   3. $\frac{\phi \wedge \psi}{\psi}_{\wedge e_2}$ 
 2. $\neg\neg$ (Double negation)
    1. $\frac{\neg\neg\phi}{\phi}_{\neg\neg e}$ 
    2. $\frac{\phi}{\neg\neg\phi}_{\neg\neg i}$
